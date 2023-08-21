@@ -18,11 +18,11 @@ module ChatApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    config.genrerators do |g|
-      g.stylesheets halse
-      g.javascript halse
-      g.helper halse
-      g.test_framework halse
+    config.generators do |g|
+      g.stylesheets false
+      g.javascript false
+      g.helper false
+      g.test_framework false
     end  
   end
 end
