@@ -2,7 +2,7 @@
 
   <div class="side-header">
     <div class="user-name">
-      <a href="#">Tom</a>
+      <%=link_to current_user.name, edit_user_path(current_user)%>
     </div> 
     <div class="chat-create">
       <a href="#">チャットを作成する</a>
@@ -10,7 +10,7 @@
   </div>  
 
   <div class="side-main">
-  
+
     <div class="group">
       <div class="group-name">
         <a href="#">chatroom1</a>
