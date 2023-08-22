@@ -5,83 +5,19 @@
       <%=link_to current_user.name, edit_user_path(current_user)%>
     </div> 
     <div class="chat-create">
-      <a href="#">チャットを作成する</a>
+      <%= link_to "チャットを作成する", new_room_path %>
     </div> 
   </div>  
 
   <div class="side-main">
 
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom1</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom2</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom3</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom4</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom5</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom6</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom7</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom8</a>
-      </div>  
-    </div>
-    
-   <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom9</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom10</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom11</a>
-      </div>  
-    </div>
-
-    <div class="group">
-      <div class="group-name">
-        <a href="#">chatroom12</a>
-      </div>  
-    </div>
+    <% current_user.rooms.each do |room| %>
+      <div class="room">
+        <div class="room-name">
+        <a href="#"><%= room.name %></a>
+        </div>
+      </div>
+    <% end %>
 
   </div>
 

@@ -41,11 +41,11 @@
   overflow: scroll;
 }
 
-.group{
+.room{
   padding: 20px 0 40px;
 }
 
-.group-name a{
+.room-name a{
   color: white;
   text-decoration: none;
 }
