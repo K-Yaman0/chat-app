@@ -95,29 +95,33 @@
   overflow: scroll;
 }
 
-.chat-info{
-  margin-bottom: 40px;
+.message {
+  margin: 10px 0 0 0;
 }
 
-.message-info{
+.upper-message{
   display: flex;
-  margin: 10px 0;
 }
 
-.chat_user{
+.message-user {
+  color: #434a54;
   font-size: 16px;
-  color: #434A54;
-  margin-right: 10px;
 }
 
-.chat-date{
-  font-size: 12px;
+.message-date {
   color: #999;
+  font-size: 12px;
+  padding-left: 10px;
 }
 
-.message{
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
   font-size: 14px;
-  color: #434A54;
+  margin-bottom: 40px;
 }
 
 /*フォーム部分*/
